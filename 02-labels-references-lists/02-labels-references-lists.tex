@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\author{Labin Ojha}
+\title{Labels, References and Lists in {\LaTeX}}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+In Section \ref{lists}, we talk about Lists.
+And in it's subsection \ref{breads} we talk about different types of breads.
+
+
+\section{Lists\label{lists}}
+
+An ordered list
+\begin{enumerate}
+    \item Butter
+    \item Cream
+    \item Bread
+    \begin{enumerate}\label{breads}
+        \item Brown Bread
+        \item White Bread
+    \end{enumerate}
+    \item Flour
+\end{enumerate}
+
+
+An unordered list
+\begin{itemize}
+    \item Bread
+    \begin{itemize}
+        \item Brown Bread
+        \item White Bread
+    \end{itemize}
+    \item Butter
+    \item Cream
+    \item Flour
+\end{itemize}
+
+\section{Labels}
+
+\end{document}

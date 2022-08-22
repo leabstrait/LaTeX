@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{titling}
+
+\renewcommand{\maketitle}{
+    \begin{center}
+        {\huge\bfseries\theauthor}
+
+        \vspace{.25em}
+        kontaktlabin@gmail.com --- https://github.com/leabstrait
+    \end{center}
+}
+
+% \titleformat{\section}
+% {\huge\bfseries}
+% {\thesection}
+% {0.5em}
+% {- }
+
+\titleformat{\section}[frame]
+{\huge}
+{}
+{.25em}
+{\filcenter\bfseries\lowercase}[]
+
+\titleformat{\subsection}
+{\Large\bfseries}
+{$\hspace{-.25in}\bullet$}
+{0.5em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[--]
+
+\titlespacing{\subsubsection}{3em}{.25em}{1em}
+
+
+\title{R\'esum\'e}
+\author{Labin Ojha}
+
+\begin{document}
+\maketitle
+
+\section{Technical Skills}
+\subsection{Languages}
+\subsubsection{Programming}
+Python, Javascript
+\subsubsection{Markup Language}
+{\LaTeX}, HTML, CSS
+
+\section{General Skills}
+\subsection{Management}
+Team Lead, Project Management
+
+\section{Education}
+\subsection{Bachelors}
+Computer Science
+
+\section{Job Experience}
+\subsection{Pi Tech}
+Python Developer
+\subsection{Beta Analytics}
+Python Developer
+
+\end{document}

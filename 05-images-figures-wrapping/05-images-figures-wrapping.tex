@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+
+\author{Labin Ojha}
+\title{Images and Figures in {\LaTeX}}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Images}
+
+\begin{center}
+    \includegraphics[width=8in,height=1in,keepaspectratio]{LaTeX_project_logo_bird.svg.png}
+    \includegraphics[width=\textwidth]{LaTeX_project_logo_bird.svg.png}
+    \includegraphics[width=0.7\textwidth]{LaTeX_project_logo_bird.svg.png}
+    \includegraphics[scale=0.15]{LaTeX_project_logo_bird.svg.png}
+    \includegraphics[scale=0.15,angle=30]{LaTeX_project_logo_bird.svg.png}
+\end{center}
+
+
+\section{Figures}
+
+\blindtext
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{LaTeX_project_logo_bird.svg.png}
+        \caption{The Latex Project}
+    \end{center}
+\end{figure}
+
+\blindtext
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.7\textwidth]{LaTeX_project_logo_bird.svg.png}
+    \caption{The Latex Project}
+\end{figure}
+
+\blindtext
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{LaTeX_project_logo_bird.svg.png}
+    \caption{The Latex Project}
+\end{figure}
+
+\blindtext
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{LaTeX_project_logo_bird.svg.png}
+    \caption{The Latex Project}
+\end{figure}
+
+\blindtext
+
+\begin{wrapfigure}{r}{3in}
+    \centering
+    \includegraphics[width=0.5\textwidth]{LaTeX_project_logo_bird.svg.png}
+    \caption{The Latex Project\label{latexproj}}
+\end{wrapfigure}
+\blindtext
+Please refer to Figure \ref{latexproj} above.
+\end{document}
