@@ -1,4 +1,6 @@
 \documentclass{beamer}
+\usepackage{graphicx}
+\usepackage{blindtext}
 \usetheme{Frankfurt}
 
 \author{Labin Ojha}
@@ -16,21 +18,43 @@
     \begin{itemize}
         \item Frames \pause
         \item Beamer Themes \pause
-        \item Pauses and SLides \pause
+        \item Pauses and Slides \pause
         \item Sections \pause
         \item Images \pause
         \item Columns
     \end{itemize}
 \end{frame}
 
-\section{Frame Titles}
+\section{Frame}
 \begin{frame}
     \frametitle{Frames}
 \end{frame}
 
-\section{Introduction}
+\section{Beamer Themes}
 \begin{frame}
     \frametitle{Beamer Themes}
+\end{frame}
+
+\section{Images}
+\begin{frame}
+    \frametitle{Images}
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{LaTeX_project_logo_bird.svg.png}
+    \end{center}
+\end{frame}
+
+\section{Columns}
+\begin{frame}
+    \frametitle{Columns}
+    \begin{columns}
+        \begin{column}{.3\textwidth}
+            \blinditemize
+        \end{column}
+        \begin{column}{.7\textwidth}
+            \includegraphics[width=.95\textwidth]{LaTeX_project_logo_bird.svg.png}
+            \blinditemize
+        \end{column}
+    \end{columns}
 \end{frame}
 
 \end{document}
